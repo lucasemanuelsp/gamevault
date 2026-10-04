@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>GameVault</title>
+</head>
+<body>
+
+  <header>
+    <h1>GameVault</h1>
+    <ul>
+      <li><a href="index.html">Minha coleção</a></li>
+      <li><a href="pages/cadastro.html">Adicionar jogo</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <section>
+      <h2>Pesquisar, filtrar e ordenar</h2>
+      <form>
+        <p>
+          <label for="busca">Título:</label>
+          <input type="search" id="busca">
+        </p>
+        <p>
+          <label for="plataforma">Plataforma:</label>
+          <select id="plataforma">
+            <option>Todas</option>
+            <option>PC</option>
+            <option>PlayStation</option>
+            <option>Xbox</option>
+            <option>Nintendo Switch</option>
+          </select>
+        </p>
+        <p>
+          <label for="status">Status:</label>
+          <select id="status">
+            <option>Todos</option>
+            <option>Quero jogar</option>
+            <option>Jogando</option>
+            <option>Zerado</option>
+          </select>
+        </p>
+        <p>
+          <label for="ordem">Ordenar por:</label>
+          <select id="ordem">
+            <option>Título</option>
+            <option>Nota</option>
+            <option>Horas jogadas</option>
+          </select>
+        </p>
+        <button type="button">Aplicar</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Jogos cadastrados</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Capa</th>
+            <th>Título</th>
+            <th>Plataforma</th>
+            <th>Status</th>
+            <th>Nota</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="assets/img/capa-exemplo.jpg" alt="Capa de The Witcher 3" width="40"></td>
+            <td>The Witcher 3</td>
+            <td>PC</td>
+            <td>Zerado</td>
+            <td>10</td>
+            <td>
+              <a href="pages/detalhes.html">Ver detalhes</a>
+              <button type="button">Editar</button>
+              <button type="button">Excluir</button>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="assets/img/capa-exemplo.jpg" alt="Capa de Hollow Knight" width="40"></td>
+            <td>Hollow Knight</td>
+            <td>Nintendo Switch</td>
+            <td>Jogando</td>
+            <td>9</td>
+            <td>
+              <a href="pages/detalhes.html">Ver detalhes</a>
+              <button type="button">Editar</button>
+              <button type="button">Excluir</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <aside>
+      <h2>Resumo</h2>
+      <ul>
+        <li>Total de jogos: 2</li>
+        <li>Jogos zerados: 1</li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>GameVault</p>
+  </footer>
+
+</body>
+</html>
