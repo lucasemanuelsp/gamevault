@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>GameVault - Adicionar jogo</title>
+</head>
+<body>
+
+  <header>
+    <h1>GameVault</h1>
+    <ul>
+      <li><a href="../index.html">Minha coleção</a></li>
+      <li><a href="cadastro.html">Adicionar jogo</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <section>
+      <h2>Adicionar jogo</h2>
+      <form>
+        <p>
+          <label for="titulo">Título:</label>
+          <input type="text" id="titulo" required>
+        </p>
+        <p>
+          <label for="plataforma">Plataforma:</label>
+          <select id="plataforma">
+            <option>PC</option>
+            <option>PlayStation</option>
+            <option>Xbox</option>
+            <option>Nintendo Switch</option>
+          </select>
+        </p>
+        <p>
+          <label for="genero">Gênero:</label>
+          <input type="text" id="genero">
+        </p>
+        <p>
+          <label for="status">Status:</label>
+          <select id="status">
+            <option>Quero jogar</option>
+            <option>Jogando</option>
+            <option>Zerado</option>
+          </select>
+        </p>
+        <p>
+          <label for="nota">Nota (0 a 10):</label>
+          <input type="number" id="nota" min="0" max="10">
+        </p>
+        <p>
+          <label for="horas">Horas jogadas:</label>
+          <input type="number" id="horas" min="0">
+        </p>
+        <p>
+          <label for="comentario">Comentário:</label><br>
+          <textarea id="comentario" rows="4" cols="30"></textarea>
+        </p>
+        <button type="submit">Salvar jogo</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>GameVault</p>
+  </footer>
+
+</body>
+</html>
