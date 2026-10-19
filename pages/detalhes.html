@@ -2,6 +2,8 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/style.css">
   <title>GameVault - Detalhes</title>
 </head>
 <body>
@@ -17,19 +19,25 @@
   <main>
     <section>
       <h2>Detalhes do jogo</h2>
-      <article>
+      <article class="detalhe-jogo">
         <h3>The Witcher 3</h3>
-        <img src="../assets/img/capa-exemplo.jpg" alt="Capa de The Witcher 3" width="120">
+        <div class="conteudo">
+          <img src="../assets/img/capa-exemplo.jpg" alt="Capa de The Witcher 3" width="120">
+          <div class="dados">
         <ul>
-          <li>Plataforma: PC</li>
-          <li>Gênero: RPG</li>
-          <li>Status: Zerado</li>
-          <li>Nota: 10</li>
-          <li>Horas jogadas: 120</li>
+          <li><strong>Plataforma:</strong> PC</li>
+          <li><strong>Gênero:</strong> RPG</li>
+          <li><strong>Status:</strong> Zerado</li>
+          <li><strong>Nota:</strong> 10</li>
+          <li><strong>Horas jogadas:</strong> 120</li>
         </ul>
-        <p>Melhor RPG que já joguei.</p>
-        <button type="button">Editar</button>
-        <button type="button">Excluir</button>
+        <p><strong>Comentário:</strong> Melhor RPG que já joguei.</p>
+        <div class="acoes">
+          <a href="editar.html">Editar</a>
+          <button type="button" class="perigo">Excluir</button>
+        </div>
+          </div>
+        </div>
       </article>
     </section>
   </main>
