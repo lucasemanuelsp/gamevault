@@ -19,23 +19,26 @@
   <main>
     <section>
       <h2>Detalhes do jogo</h2>
-      <article class="detalhe-jogo">
-        <h3>The Witcher 3</h3>
+      <p id="mensagem" class="mensagem" hidden></p>
+      <article class="detalhe-jogo" id="area-detalhes">
+        <h3 id="det-titulo"></h3>
         <div class="conteudo">
-          <img src="../assets/img/capa-exemplo.jpg" alt="Capa de The Witcher 3" width="120">
+          <img id="det-capa" src="../assets/img/capa-exemplo.jpg" alt="Capa do jogo" width="120">
           <div class="dados">
-        <ul>
-          <li><strong>Plataforma:</strong> PC</li>
-          <li><strong>Gênero:</strong> RPG</li>
-          <li><strong>Status:</strong> Zerado</li>
-          <li><strong>Nota:</strong> 10</li>
-          <li><strong>Horas jogadas:</strong> 120</li>
-        </ul>
-        <p><strong>Comentário:</strong> Melhor RPG que já joguei.</p>
-        <div class="acoes">
-          <a href="editar.html">Editar</a>
-          <button type="button" class="perigo">Excluir</button>
-        </div>
+            <ul>
+              <li><strong>Plataforma:</strong> <span id="det-plataforma"></span></li>
+              <li><strong>Gênero:</strong> <span id="det-genero"></span></li>
+              <li><strong>Status:</strong> <span id="det-status"></span></li>
+              <li><strong>Nota:</strong> <span id="det-nota"></span></li>
+              <li><strong>Horas jogadas:</strong> <span id="det-horas"></span></li>
+              <li><strong>Menor preço:</strong> <span id="det-preco"></span></li>
+            </ul>
+            <p><strong>Comentário:</strong> <span id="det-comentario"></span></p>
+            <div class="acoes">
+              <a id="btn-editar" href="editar.html">Editar</a>
+              <button type="button" id="btn-preco">Atualizar preço</button>
+              <button type="button" class="perigo" id="btn-excluir">Excluir</button>
+            </div>
           </div>
         </div>
       </article>
@@ -46,5 +49,8 @@
     <p>GameVault</p>
   </footer>
 
+  <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/api.js"></script>
+  <script src="../assets/js/detalhes.js"></script>
 </body>
 </html>
